@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import "assets/variables";
+body{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: $main-font-weight;
+  font-size: $main-font-size;
+}
+header{
+  color: $main-white-color;
+  background-color: $main-blue-color;
+}
