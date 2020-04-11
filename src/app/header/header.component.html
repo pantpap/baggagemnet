@@ -2,16 +2,23 @@
   <div class="container-fluid">
     <div class="d-flex justify-content-around align-items-center">
       <div>
-        <img src="../../assets/images/aegean-logo1.jpg">
+        <img src="../../assets/images/aegean-logo.jpg">
       </div>
       <div>{{ 'HOME.HEADER.BookBaggageTransfer' | translate }}</div>
-      <div>aegenair.com</div>
-      <div>
-        <select #langselect (change)="translateService.use(langselect.value)">
-          <option *ngFor="let lang of translateService.getLangs()" > {{ lang }}</option>
-        </select>
+      <div class="d-flex">
+        <div class="aegean-link mr-3">
+          aegenair.com
+        </div>
+        <div class="lang-selector">
+<!--          TODO: implement angular material select-->
+          <select #langselect (change)="translateService.use(langselect.value)">
+            <option *ngFor="let lang of translateService.getLangs()" > {{ lang }}</option>
+          </select>
+        </div>
       </div>
-      <div>baggagement logo</div>
+      <div>
+        <img src="../../assets/images/bag_logo.png">
+      </div>
     </div>
 
   </div>
