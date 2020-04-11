@@ -4,9 +4,13 @@
       <div>
         <img src="../../assets/images/aegean-logo1.jpg">
       </div>
-      <div>BOOK A BAGGAGE TRANSFER</div>
+      <div>{{ 'HOME.HEADER.BookBaggageTransfer' | translate }}</div>
       <div>aegenair.com</div>
-      <div>EN ></div>
+      <div>
+        <select #langselect (change)="translateService.use(langselect.value)">
+          <option *ngFor="let lang of translateService.getLangs()" > {{ lang }}</option>
+        </select>
+      </div>
       <div>baggagement logo</div>
     </div>
 
