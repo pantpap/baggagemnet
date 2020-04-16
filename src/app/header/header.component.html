@@ -1,26 +1,30 @@
 <header>
-  <div class="container-fluid">
+  <div class="header">
     <div class="d-flex justify-content-around align-items-center">
-      <div>
-        <img src="../../assets/images/aegean-logo.jpg">
+      <div class="d-flex align-items-center">
+        <div>
+          <img class="img-fluid" src="../../assets/images/aegean-logo.jpg">
+        </div>
+        <div>{{ 'HOME.HEADER.BookBaggageTransfer' | translate }}</div>
       </div>
-      <div>{{ 'HOME.HEADER.BookBaggageTransfer' | translate }}</div>
-      <div class="d-flex">
+
+
+
+      <div class="d-flex justify-content-between">
         <div class="aegean-link mr-3">
-          aegenair.com
+          <a href="https://aegeanair.com">aegenair.com</a>
         </div>
         <div class="lang-selector">
-<!--          TODO: implement angular material select-->
+  <!--          TODO: implement angular material select-->
           <select #langselect (change)="translateService.use(langselect.value)">
             <option *ngFor="let lang of translateService.getLangs()" > {{ lang }}</option>
           </select>
         </div>
       </div>
-      <div>
+      <div class="baggagement-logo">
         <img src="../../assets/images/bag_logo.png">
       </div>
     </div>
-
   </div>
 </header>
 

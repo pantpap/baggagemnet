@@ -1,5 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import "assets/variables";
+
+.titles-main-color{
+  color: $main-titles-color;
+}
+.descriptions-main-color{
+  color: $main-desciptions-color;
+}
+
 body{
   font-family: Raleway;
   font-style: normal;
@@ -9,4 +17,130 @@ body{
 header{
   color: $main-white-color;
   background-color: $main-blue-color;
+  .header{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .aegean-link{
+    a{
+      color: $main-white-color;
+      text-decoration: none;
+    }
+  }
+}
+
+.main-wrapper{
+  position: relative;
+  .welcome-img{
+    //background-image: url("assets/images/athens_final.png");
+  }
+  .text{
+    position: absolute;
+    left: 15%;
+    top: 8%;
+    color: $main-white-color;
+    .text-title{
+      font-family: Muli;
+      font-weight: 800;
+      font-size: 42px;
+      line-height: 53px;
+    }
+    .text-desc{
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+  .f24{ font-size: 24px; }
+  .f32{ font-size: 32px; }
+  .f36{ font-size: 36px; }
+  .f42{ font-size: 42px; }
+
+  .w-60{ width: 60%; }
+
+  .main-info{
+    padding: 3rem 3rem 3rem 5rem;
+  }
+
+  .booking-engine{
+    background-color: red;
+    width: 320px;
+    height: 520px;
+  }
+
+  .meet-baggagement{
+    font-weight: 800;
+    .title{
+      font-size: 36px;
+    }
+    .sub-title{
+      font-size: 24px;
+    }
+    .long-desc{
+      font-weight: 300;
+    }
+  }
+
+  .features{
+    font-weight: 800;
+    .title{
+      font-size: 36px;
+    }
+    .feature{
+      font-weight: 800;
+    }
+    .feature-desc{
+      font-weight: 300;
+    }
+  }
+
+  .how-it-works{
+    font-weight: 800;
+    .title{
+      font-size: 36px;
+    }
+
+    .book-service{
+      .service{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+        line-height: 75px;
+      }
+      .service-title{
+        font-family: Muli;
+        font-weight: 800;
+      }
+      .service-desc{
+        font-weight: 300;
+        margin-left: 100px;
+      }
+    }
+  }
+
+  .locations-info{
+    padding: 0 5rem 3rem 5rem;
+    .locations-info-title{
+      font-weight: bold;
+    }
+    .location{
+      font-size: 24px;
+      .location-title{
+        font-weight: 800;
+        font-size: 28px;
+      }
+      .location-desc{
+        .location-long-desc{
+          width: 80%;
+        }
+      }
+      .location-image{
+        width: 40%;
+        margin-left: auto;
+      }
+
+    }
+  }
+
 }
