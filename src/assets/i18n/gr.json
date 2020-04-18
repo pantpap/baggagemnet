@@ -5,6 +5,11 @@
     },
     "BODY": {
       "EnjoyAthensBaggageFree": "Enjoy Athens baggage free"
+    },
+    "FOOTER": {
+      "TermsOfUse": "Όροι Χρήσης",
+      "PrivacyPolicy": "Πολιτική Απορρήτου",
+      "HelpAndSupport":"Εξυπηρέτηση Πελατών"
     }
   }
 }

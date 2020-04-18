@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';
 
 @Component({
@@ -9,11 +9,13 @@ import {DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';
 export class MainComponent implements OnInit {
   url = 'http://baggagement.gr/book/?widget';
   urlSafe: SafeResourceUrl;
+  @ViewChild('engine', { static: true }) engine;
 
   constructor(public sanitizer: DomSanitizer) { }
 
   ngOnInit() {
     this.urlSafe = this.sanitizer.bypassSecurityTrustResourceUrl(this.url);
+    console.log(this.engine);
   }
 
 }

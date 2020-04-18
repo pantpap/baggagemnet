@@ -29,6 +29,28 @@ header{
   }
 }
 
+footer{
+  color: $main-white-color;
+  background-color: $main-blue-color;
+  .footer{
+    a{
+      color: $main-white-color;
+      text-decoration: none;
+    }
+  }
+}
+
+.booking-engine{
+  background-color: #FFFFFF;
+  width: 320px;
+  height: 520px;
+  position: fixed;
+  top: 300px;
+  right: 250px;
+  border-radius: 5px;
+  border: 1px solid #E5E5E5;
+}
+
 .main-wrapper{
   position: relative;
   .welcome-img{
@@ -37,8 +59,8 @@ header{
   .text{
     position: absolute;
     left: 15%;
-    top: 8%;
-    color: $main-white-color;
+    top: 1.5%;
+    color: #FFFFFF;
     .text-title{
       font-family: Muli;
       font-weight: 800;
@@ -61,11 +83,7 @@ header{
     padding: 3rem 3rem 3rem 5rem;
   }
 
-  .booking-engine{
-    background-color: red;
-    width: 320px;
-    height: 520px;
-  }
+
 
   .meet-baggagement{
     font-weight: 800;

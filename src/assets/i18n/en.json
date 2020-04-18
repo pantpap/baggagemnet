@@ -5,6 +5,11 @@
     },
     "BODY": {
       "EnjoyAthensBaggageFree": "Enjoy Athens baggage free"
+    },
+    "FOOTER": {
+      "TermsOfUse": "Terms of Use",
+      "PrivacyPolicy": "Privacy Policy",
+      "HelpAndSupport":"Help & Support"
     }
   }
 }
