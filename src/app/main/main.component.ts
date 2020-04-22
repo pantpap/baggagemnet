@@ -8,6 +8,7 @@ import {DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';
 })
 export class MainComponent implements OnInit {
   url = 'http://baggagement.gr/book/?widget';
+  // url = 'https://angular.io/';
   urlSafe: SafeResourceUrl;
   @ViewChild('engine', { static: true }) engine;
 

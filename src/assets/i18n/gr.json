@@ -1,10 +1,11 @@
 {
   "HOME": {
     "HEADER": {
-      "BookBaggageTransfer": "BOOK A BAGGAGE TRANSFER"
+      "BookBaggageTransfer": "Κλείσε τη μεταφορά της αποσκευής σου"
     },
     "BODY": {
-      "EnjoyAthensBaggageFree": "Enjoy Athens baggage free"
+      "EnjoyAthensBaggageFree": "Enjoy Athens baggage free",
+      "WePickupAndDeliverYourBagsToAnyPlaceInAthens": "We pick-up and deliver your bags to any place in Athens"
     },
     "FOOTER": {
       "TermsOfUse": "Όροι Χρήσης",

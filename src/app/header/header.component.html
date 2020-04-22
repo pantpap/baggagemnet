@@ -2,15 +2,15 @@
   <div class="header">
     <div class="d-flex justify-content-around align-items-center">
       <div class="d-flex align-items-center">
-        <div>
-          <img class="img-fluid" src="../../assets/images/aegean-logo.jpg">
+        <div class="mr-3">
+          <img class="img-fluid aegean-logo" src="../../assets/images/A3-SA-white-Letters_nobg.png">
         </div>
-        <div>{{ 'HOME.HEADER.BookBaggageTransfer' | translate }}</div>
+        <div class="book-transfer">{{ 'HOME.HEADER.BookBaggageTransfer' | translate }}</div>
       </div>
       <div class="d-flex justify-content-between">
-        <div class="aegean-link mr-3">
-          <a href="https://aegeanair.com">aegenair.com</a>
-        </div>
+<!--        <div class="aegean-link mr-3">-->
+<!--          <a href="https://aegeanair.com">aegenair.com</a>-->
+<!--        </div>-->
         <div class="lang-selector">
   <!--          TODO: implement angular material select-->
           <select #langselect (change)="translateService.use(langselect.value)">
@@ -19,7 +19,7 @@
         </div>
       </div>
       <div class="baggagement-logo">
-        <img src="../../assets/images/bag_logo.png">
+        <img class="img-fluid" src="../../assets/images/bag_logo.png">
       </div>
     </div>
   </div>

@@ -8,6 +8,13 @@
   color: $main-desciptions-color;
 }
 
+.f24{ font-size: 24px; }
+.f32{ font-size: 32px; }
+.f36{ font-size: 36px; }
+.f42{ font-size: 42px; }
+
+.w-60{ width: 60%; }
+
 body{
   font-family: Raleway;
   font-style: normal;
@@ -17,6 +24,7 @@ body{
 header{
   color: $main-white-color;
   background-color: $main-blue-color;
+  padding: 15px;
   .header{
     width: 80%;
     margin: 0 auto;
@@ -40,16 +48,7 @@ footer{
   }
 }
 
-.booking-engine{
-  background-color: #FFFFFF;
-  width: 320px;
-  height: 520px;
-  position: fixed;
-  top: 300px;
-  right: 250px;
-  border-radius: 5px;
-  border: 1px solid #E5E5E5;
-}
+
 
 .main-wrapper{
   position: relative;
@@ -72,12 +71,18 @@ footer{
       font-size: 18px;
     }
   }
-  .f24{ font-size: 24px; }
-  .f32{ font-size: 32px; }
-  .f36{ font-size: 36px; }
-  .f42{ font-size: 42px; }
+  .booking-engine{
+    background-color: #FFFFFF;
+    width: 320px;
+    height: 520px;
+    position: fixed;
+    top: 300px;
+    right: 250px;
+    border-radius: 5px;
+    border: 1px solid #E5E5E5;
+    z-index:999;
+  }
 
-  .w-60{ width: 60%; }
 
   .main-info{
     padding: 3rem 3rem 3rem 5rem;
@@ -162,3 +167,89 @@ footer{
   }
 
 }
+
+@media (max-width: 575.98px) {
+  header{
+    .header{
+      margin: 0;
+      width: 100%;
+      .book-transfer{
+        font-size: 12px;
+      }
+      .baggagement-logo{
+        display: none;
+      }
+    }
+  }
+
+  .main-wrapper{
+    padding: 0!important;
+    .text{
+      top: 0;
+      .text-title{
+        font-size: 20px;
+      }
+      .text-desc{
+        font-size: 12px;
+      }
+    }
+    .booking-engine{
+      position: relative;
+      width: auto;
+      top: 0;
+      right: 0;
+    }
+  }
+  .main-info{
+    padding: 1rem!important;
+    .meet-baggagement{
+      .desc{
+        padding-left: 5px !important;
+        .long-desc{
+          margin-right: 1rem!important;
+        }
+      }
+    }
+    .how-it-works{
+      .book-service{
+        padding-left: 1rem!important;
+        .service-wrapper{
+          .service{
+            width: 20%;
+          }
+          .service-title{
+            width: 70%;
+            font-size: 28px;
+          }
+          .service-desc{
+            margin-left: 0;
+            div{
+              width: 100%!important;
+              margin-bottom: 1rem;
+            }
+          }
+          .service-img{
+            margin-right: 15%;
+            div{
+              width: 100%!important;
+              margin-left: 0!important;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
