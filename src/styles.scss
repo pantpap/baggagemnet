@@ -240,6 +240,29 @@ footer{
       }
     }
   }
+  .locations-info{
+    padding: 1rem!important;
+    .locations-info-title{
+      font-size: 32px!important;
+    }
+    .location{
+      .location-wrapper{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        .location-desc{
+          padding-left: 0!important;
+          width: 100%!important;
+          .location-long-desc{
+            width: 100%;
+          }
+        }
+        .location-image{
+          width: 100%;
+        }
+      }
+
+    }
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
