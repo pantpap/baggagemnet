@@ -21,6 +21,10 @@ body{
   font-weight: $main-font-weight;
   font-size: $main-font-size;
 }
+
+.go-Booking{
+  display: none;
+}
 header{
   color: $main-white-color;
   background-color: $main-blue-color;
@@ -169,6 +173,10 @@ footer{
 }
 
 @media (max-width: 575.98px) {
+  .go-Booking{
+    display: block;
+    position: fixed;
+  }
   header{
     .header{
       margin: 0;
@@ -261,6 +269,12 @@ footer{
         }
       }
 
+    }
+  }
+
+  .footer{
+    .footer-content{
+      flex-wrap: wrap;
     }
   }
 }
