@@ -1,1 +1,27 @@
-<p>header works!</p>
+<header>
+  <div class="header">
+    <div class="d-flex justify-content-around align-items-center">
+      <div class="d-flex align-items-center">
+        <div class="mr-3">
+          <img class="img-fluid aegean-logo" src="../../assets/images/A3-SA-white-Letters_nobg.png">
+        </div>
+        <div class="book-transfer">{{ 'HOME.HEADER.BookBaggageTransfer' | translate }}</div>
+      </div>
+      <div class="d-flex justify-content-between">
+<!--        <div class="aegean-link mr-3">-->
+<!--          <a href="https://aegeanair.com">aegenair.com</a>-->
+<!--        </div>-->
+        <div class="lang-selector">
+  <!--          TODO: implement angular material select-->
+          <select #langselect (change)="translateService.use(langselect.value)">
+            <option *ngFor="let lang of translateService.getLangs()" > {{ lang }}</option>
+          </select>
+        </div>
+      </div>
+      <div class="baggagement-logo">
+        <img class="img-fluid" src="../../assets/images/bag_logo.png">
+      </div>
+    </div>
+  </div>
+</header>
+

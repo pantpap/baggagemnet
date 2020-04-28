@@ -1,0 +1,266 @@
+<div class="main-wrapper p-5">
+  <section>
+    <div class="welcome-img">
+      <img class="img-fluid" src="../../assets/images/athens_final.png">
+    </div>
+    <div class="text">
+      <div class="text-title mb-3">
+        {{ 'HOME.BODY.EnjoyAthensBaggageFree' | translate }}
+      </div>
+      <div class="text-desc">
+        <div>
+          {{ 'HOME.BODY.WePickupAndDeliverYourBagsToAnyPlaceInAthens' | translate }}
+<!--          We pick-up and deliver your bags to any place in Athens,-->
+        </div>
+        <div>
+          Athens Airport, Piraeus Port, Hotels and Airbnb included
+        </div>
+      </div>
+    </div>
+    <div class="booking-engine" #engine>
+      <iframe width="100%" height="100%" frameBorder="0" [src]="urlSafe"></iframe>
+    </div>
+
+
+  </section>
+
+  <section>
+    <div class="col-lg-6 main-info">
+      <div class="meet-baggagement">
+        <div class="title titles-main-color">
+          {{ 'HOME.BODY.MeetBaggagement' | translate}}
+        </div>
+        <div class="sub-title titles-main-color">
+          {{ 'HOME.BODY.BaggageStorageDeliveryService' | translate }}
+        </div>
+
+        <div class="desc mt-5 d-flex align-items-center pl-3">
+          <div class="long-desc w-75 mr-5 descriptions-main-color">
+            {{ 'HOME.BODY.InBaggagement' | translate }}
+          </div>
+          <div class="img">
+            <img src="../../assets/images/Trolley.png">
+          </div>
+        </div>
+        <div class="what-we-do mt-5">
+          <img class="img-fluid" src="../../assets/images/PoC_Excess2.PNG">
+        </div>
+      </div>
+
+      <div class="features mt-5">
+        <div class="title titles-main-color">
+          {{ 'HOME.BODY.BasicFeaturesBenefits' | translate }}
+        </div>
+        <div class="d-flex">
+          <div class="col-lg-6">
+            <div class="icon col-lg-12 mt-5 mb-3 p-0">
+
+            </div>
+            <div class="feature col-lg-12 mb-3 p-0">
+              {{ 'HOME.BODY.Comfort' | translate }}
+            </div>
+            <div class="feature-desc col-lg-12 mb-3 descriptions-main-color p-0">
+              {{ 'HOME.BODY.ComfortDesc' | translate }}
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="icon col-lg-12 mt-5 mb-3 p-0">
+
+            </div>
+            <div class="feature col-lg-12 mb-3 p-0">
+              {{ 'HOME.BODY.EasyQuick' | translate }}
+            </div>
+            <div class="feature-desc col-lg-12 mb-3 descriptions-main-color p-0">
+              {{ 'HOME.BODY.EasyQuickDesc' | translate }}
+            </div>
+          </div>
+        </div>
+        <div class="d-flex">
+          <div class="col-lg-6">
+            <div class="icon col-lg-12 mt-5 mb-3 p-0">
+
+            </div>
+            <div class="feature col-lg-12 mb-3 p-0">
+              {{ 'HOME.BODY.SafeReliable' | translate }}
+            </div>
+            <div class="feature-desc col-lg-12 mb-3 descriptions-main-color p-0">
+              {{ 'HOME.BODY.SafeReliableDesc' | translate }}
+
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="icon col-lg-12 mt-5 mb-3 p-0">
+
+            </div>
+            <div class="feature col-lg-12 mb-3 p-0">
+              {{ 'HOME.BODY.ValueForMoney' | translate }}
+            </div>
+            <div class="feature-desc col-lg-12 mb-3 descriptions-main-color p-0">
+              {{ 'HOME.BODY.ValueForMoneyDesc' | translate }}
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="how-it-works mt-5">
+        <div class="title mb-3">
+          {{ 'HOME.BODY.HowItWorks' | translate }}
+        </div>
+        <div class="book-service mb-5 pl-5">
+          <div class="d-flex align-items-center flex-wrap service-wrapper">
+            <div class="service f42 text-center mr-3">1</div>
+            <div class="service-title f32">{{ 'HOME.BODY.BookServiceOnline' | translate }}</div>
+            <div class="service-desc f24 descriptions-main-color w-100">
+              <div class="w-75 f24 descriptions-main-color">
+                {{ 'HOME.BODY.BookServiceOnlineDesc' | translate }}
+
+              </div>
+            </div>
+            <div class="service-img w-100">
+              <div class="w-50 ml-5">
+                <img class="img-fluid" src="../../assets/images/STEP_1_FINAL_2.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="book-service pl-5 mb-5">
+          <div class="d-flex align-items-center flex-wrap service-wrapper">
+          <div class="service f42 text-center mr-3">2</div>
+          <div class="service-title f32">{{ 'HOME.BODY.BaggagePickup' | translate }}</div>
+          <div class="service-desc descriptions-main-color w-100">
+            <div class="w-75 f24 descriptions-main-color">
+              {{ 'HOME.BODY.BaggagePickupDesc' | translate }}
+
+            </div>
+
+          </div>
+          <div class="service-img w-100">
+            <div class="w-50 ml-5">
+              <img class="img-fluid" src="../../assets/images/STEP_2_FINAL_2.png">
+            </div>
+
+          </div>
+        </div>
+        </div>
+        <div class="book-service pl-5 mb-5">
+          <div class="d-flex align-items-center flex-wrap service-wrapper">
+            <div class="service f42 text-center mr-3">3</div>
+            <div class="service-title f32">{{ 'HOME.BODY.BaggageDelivery' | translate }}</div>
+            <div class="service-desc descriptions-main-color w-100">
+              <div class="w-75 f24 descriptions-main-color">
+                {{ 'HOME.BODY.BaggageDeliveryDesc' | translate }}
+              </div>
+              <div class="service-desc descriptions-main-color w-100">
+
+              </div>
+
+            </div>
+            <div class="service-img w-100">
+              <div class="w-50 ml-5">
+                <img class="img-fluid" src="../../assets/images/STEP_3_FINAL_2.png">
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="locations-info col-lg-12">
+      <div class="locations-info-title titles-main-color f42 mb-5">
+        {{ 'HOME.BODY.PickAndDeliver' | translate }}
+
+      </div>
+      <div class="location mb-5">
+        <div class="location-wrapper d-flex">
+          <div class="location-desc w-50 pl-5">
+            <div class="location-title titles-main-color mb-3">
+              {{ 'HOME.BODY.AthensAirport' | translate }}
+            </div>
+            <div class="location-long-desc descriptions-main-color">
+              {{ 'HOME.BODY.AthensAirportDesc' | translate }}
+            </div>
+          </div>
+          <div class="location-image">
+            <img class="img-fluid rounded" src="../../assets/images/airport.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="location mb-5">
+        <div class="location-wrapper d-flex">
+          <div class="location-desc w-50 pl-5">
+            <div class="location-title titles-main-color mb-3">
+              {{ 'HOME.BODY.PiraeusPort' | translate }}
+            </div>
+            <div class="location-long-desc descriptions-main-color">
+              {{ 'HOME.BODY.PiraeusPortDesc' | translate }}
+            </div>
+          </div>
+          <div class="location-image">
+            <img class="img-fluid rounded" src="../../assets/images/piraeus_port.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="location mb-5">
+        <div class="location-wrapper d-flex">
+          <div class="location-desc w-50 pl-5">
+            <div class="location-title titles-main-color mb-3">
+              {{ 'HOME.BODY.Marinas' | translate }}
+            </div>
+            <div class="location-long-desc descriptions-main-color">
+              {{ 'HOME.BODY.MarinasDesc' | translate }}
+            </div>
+          </div>
+          <div class="location-image">
+            <img class="img-fluid rounded" src="../../assets/images/yacht.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="location mb-5">
+        <div class="location-wrapper d-flex">
+          <div class="location-desc w-50 pl-5">
+            <div class="location-title titles-main-color mb-3">
+              {{ 'HOME.BODY.HotelAirbnb' | translate }}
+            </div>
+            <div class="location-long-desc descriptions-main-color">
+              {{ 'HOME.BODY.HotelAirbnbDesc' | translate }}
+            </div>
+          </div>
+          <div class="location-image">
+            <img class="img-fluid rounded" src="../../assets/images/Electra_hotel.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="location mb-5">
+        <div class="location-wrapper d-flex">
+          <div class="location-desc w-50 pl-5">
+            <div class="location-title titles-main-color mb-3">
+              {{ 'HOME.BODY.OtherPlaces' | translate }}
+
+            </div>
+            <div class="location-long-desc descriptions-main-color">
+              {{ 'HOME.BODY.OtherPlacesDesc' | translate }}
+            </div>
+          </div>
+          <div class="location-image">
+            <img class="img-fluid rounded" src="../../assets/images/syntagma.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="go-Booking">
+    <button class="btn btn-primary">Book a tranfer</button>
+  </div>
+<!--  <div class="main-img">-->
+<!--    <img class="img-fluid" src="../../assets/images/athens_final.png">-->
+<!--  </div>-->
+
+<!--  <div class="booking-engine" #engine>-->
+<!--    <iframe width="100%" height="100%" frameBorder="0" [src]="urlSafe"></iframe>-->
+<!--  </div>-->
+
+</div>
