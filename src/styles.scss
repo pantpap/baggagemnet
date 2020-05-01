@@ -32,6 +32,11 @@ header{
   .header{
     width: 80%;
     margin: 0 auto;
+    select{
+      background-color: $main-blue-color;
+      border: 0;
+      color: #fff;
+    }
   }
   .aegean-link{
     a{
@@ -48,6 +53,10 @@ footer{
     a{
       color: $main-white-color;
       text-decoration: none;
+    }
+    .copyright{
+      margin-left: 30px;
+      padding-bottom: 15px;
     }
   }
 }
@@ -88,15 +97,6 @@ footer{
     float: right;
     margin-right: 10%;
     margin-top: -45%;
-    //background-color: #FFFFFF;
-    //width: 320px;
-    //height: 520px;
-    //position: sticky;
-    //top: 300px;
-    //right: 250px;
-    //border-radius: 5px;
-    //border: 1px solid #E5E5E5;
-    //z-index:999;
   }
 
 
@@ -187,10 +187,6 @@ footer{
 @media (max-width: 575.98px) {
   .go-Booking{
     display: block;
-    /* position: fixed; */
-    /* z-index: 999; */
-    /* bottom: 195px; */
-    /* width: 100%; */
     padding: 0 15px;
     margin-bottom: 15px;
 
@@ -214,6 +210,7 @@ footer{
       top: 0;
       .text-title{
         font-size: 20px;
+        margin-bottom: 0!important;
       }
       .text-desc{
         font-size: 12px;
@@ -295,6 +292,9 @@ footer{
   .footer{
     .footer-content{
       flex-wrap: wrap;
+    }
+    .copyright{
+      margin-left: 15px!important;
     }
   }
 }
