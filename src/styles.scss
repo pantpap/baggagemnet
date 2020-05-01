@@ -57,12 +57,12 @@ footer{
 .main-wrapper{
   position: relative;
   .welcome-img{
-    //background-image: url("assets/images/athens_final.png");
+       //background-image: url("assets/images/athens_final.png");
   }
   .text{
     position: absolute;
     left: 15%;
-    top: 1.5%;
+    top: 2.5%;
     color: #FFFFFF;
     .text-title{
       font-family: Muli;
@@ -79,12 +79,24 @@ footer{
     background-color: #FFFFFF;
     width: 320px;
     height: 520px;
-    position: fixed;
-    top: 300px;
-    right: 250px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 25%;
     border-radius: 5px;
     border: 1px solid #E5E5E5;
-    z-index:999;
+    z-index: 999;
+    float: right;
+    margin-right: 10%;
+    margin-top: -45%;
+    //background-color: #FFFFFF;
+    //width: 320px;
+    //height: 520px;
+    //position: sticky;
+    //top: 300px;
+    //right: 250px;
+    //border-radius: 5px;
+    //border: 1px solid #E5E5E5;
+    //z-index:999;
   }
 
 
@@ -175,7 +187,13 @@ footer{
 @media (max-width: 575.98px) {
   .go-Booking{
     display: block;
-    position: fixed;
+    /* position: fixed; */
+    /* z-index: 999; */
+    /* bottom: 195px; */
+    /* width: 100%; */
+    padding: 0 15px;
+    margin-bottom: 15px;
+
   }
   header{
     .header{
@@ -203,9 +221,11 @@ footer{
     }
     .booking-engine{
       position: relative;
-      width: auto;
-      top: 0;
+      width: 100%;
+      /* top: 0; */
       right: 0;
+      margin-top: 0;
+      margin-right: 0;
     }
   }
   .main-info{

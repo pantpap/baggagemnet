@@ -1,7 +1,10 @@
 <div class="main-wrapper p-5">
-  <section>
+  <section style="position: relative">
     <div class="welcome-img">
       <img class="img-fluid" src="../../assets/images/athens_final.png">
+    </div>
+    <div class="booking-engine" #engine>
+      <iframe width="100%" height="100%" frameBorder="0" [src]="urlSafe"></iframe>
     </div>
     <div class="text">
       <div class="text-title mb-3">
@@ -10,21 +13,13 @@
       <div class="text-desc">
         <div>
           {{ 'HOME.BODY.WePickupAndDeliverYourBagsToAnyPlaceInAthens' | translate }}
-<!--          We pick-up and deliver your bags to any place in Athens,-->
+          <!--          We pick-up and deliver your bags to any place in Athens,-->
         </div>
         <div>
           Athens Airport, Piraeus Port, Hotels and Airbnb included
         </div>
       </div>
     </div>
-    <div class="booking-engine" #engine>
-      <iframe width="100%" height="100%" frameBorder="0" [src]="urlSafe"></iframe>
-    </div>
-
-
-  </section>
-
-  <section>
     <div class="col-lg-6 main-info">
       <div class="meet-baggagement">
         <div class="title titles-main-color">
@@ -127,22 +122,22 @@
         </div>
         <div class="book-service pl-5 mb-5">
           <div class="d-flex align-items-center flex-wrap service-wrapper">
-          <div class="service f42 text-center mr-3">2</div>
-          <div class="service-title f32">{{ 'HOME.BODY.BaggagePickup' | translate }}</div>
-          <div class="service-desc descriptions-main-color w-100">
-            <div class="w-75 f24 descriptions-main-color">
-              {{ 'HOME.BODY.BaggagePickupDesc' | translate }}
+            <div class="service f42 text-center mr-3">2</div>
+            <div class="service-title f32">{{ 'HOME.BODY.BaggagePickup' | translate }}</div>
+            <div class="service-desc descriptions-main-color w-100">
+              <div class="w-75 f24 descriptions-main-color">
+                {{ 'HOME.BODY.BaggagePickupDesc' | translate }}
+
+              </div>
 
             </div>
+            <div class="service-img w-100">
+              <div class="w-50 ml-5">
+                <img class="img-fluid" src="../../assets/images/STEP_2_FINAL_2.png">
+              </div>
 
-          </div>
-          <div class="service-img w-100">
-            <div class="w-50 ml-5">
-              <img class="img-fluid" src="../../assets/images/STEP_2_FINAL_2.png">
             </div>
-
           </div>
-        </div>
         </div>
         <div class="book-service pl-5 mb-5">
           <div class="d-flex align-items-center flex-wrap service-wrapper">
@@ -168,6 +163,9 @@
       </div>
 
     </div>
+  </section>
+
+  <section>
     <div class="locations-info col-lg-12">
       <div class="locations-info-title titles-main-color f42 mb-5">
         {{ 'HOME.BODY.PickAndDeliver' | translate }}
@@ -253,14 +251,6 @@
   </section>
 
   <div class="go-Booking">
-    <button class="btn btn-primary">Book a tranfer</button>
+    <button class="btn btn-block btn-primary">Book a tranfer</button>
   </div>
-<!--  <div class="main-img">-->
-<!--    <img class="img-fluid" src="../../assets/images/athens_final.png">-->
-<!--  </div>-->
-
-<!--  <div class="booking-engine" #engine>-->
-<!--    <iframe width="100%" height="100%" frameBorder="0" [src]="urlSafe"></iframe>-->
-<!--  </div>-->
-
 </div>
