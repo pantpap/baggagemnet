@@ -250,7 +250,7 @@
     </div>
   </section>
 
-  <div class="go-Booking">
+  <div class="go-Booking" *ngIf="scrolled == 1" #goBooking>
     <button class="btn btn-block btn-primary" (click)="scrollTo()">Book a tranfer</button>
   </div>
 </div>
