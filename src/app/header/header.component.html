@@ -2,17 +2,13 @@
   <div class="header">
     <div class="d-flex justify-content-around align-items-center">
       <div class="d-flex align-items-center">
-        <div class="mr-3">
+        <div class="mr-4">
           <img class="img-fluid aegean-logo" src="../../assets/images/A3-SA-white-Letters_nobg.png">
         </div>
         <div class="book-transfer">{{ 'HOME.HEADER.BookBaggageTransfer' | translate }}</div>
       </div>
-      <div class="d-flex justify-content-between">
-<!--        <div class="aegean-link mr-3">-->
-<!--          <a href="https://aegeanair.com">aegenair.com</a>-->
-<!--        </div>-->
+      <div class="d-flex justify-content-between mr-4">
         <div class="lang-selector">
-  <!--          TODO: implement angular material select-->
           <select #langselect (change)="translateService.use(langselect.value)">
             <option *ngFor="let lang of translateService.getLangs()" > {{ lang }}</option>
           </select>
