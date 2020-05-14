@@ -71,7 +71,7 @@ footer{
   .text{
     position: absolute;
     left: 15%;
-    top: 2.5%;
+    top: 1.5%;
     color: #FFFFFF;
     .text-title{
       font-family: Muli;
@@ -306,7 +306,130 @@ footer{
 @media (min-width: 576px) and (max-width: 767.98px) {  }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) { }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header{
+    .header{
+      margin: 0;
+      width: 100%;
+      .book-transfer{
+        font-size: 12px;
+      }
+      .baggagement-logo{
+        display: none;
+      }
+    }
+  }
+  .main-wrapper{
+    padding: 0!important;
+    .text{
+      top: -7px;
+      .text-title{
+        font-size: 20px;
+        margin-bottom: 0!important;
+      }
+      .text-desc{
+        font-size: 12px;
+      }
+    }
+    .booking-engine{
+      margin-right: 4%;
+    }
+  }
+  .main-info{
+    padding: 1rem!important;
+    .meet-baggagement{
+      padding: 0;
+      .what-we-do{
+        img{
+          width: 54%!important;
+        }
+      }
+      .desc{
+        //padding-left: 5px !important;
+        .long-desc{
+          margin-right: 1rem!important;
+        }
+        .img{
+          margin-right: 1rem!important;
+        }
+      }
+
+    }
+    .features{
+      width: 50%!important;
+      font-weight: 800;
+      .title{
+        font-size: 36px;
+      }
+      .descr{
+        flex-wrap: wrap;
+      }
+      .feature{
+        font-weight: 800;
+      }
+      .feature-desc{
+        font-weight: 300;
+      }
+    }
+    .how-it-works{
+      .book-service{
+        padding-left: 0!important;
+        .service-wrapper{
+          width: 60%;
+          .service{
+            //width: 20%;
+          }
+          .service-title{
+            //width: 70%;
+            //font-size: 28px;
+          }
+          .service-desc{
+            margin-left: 40px;
+            margin-top: 15px;
+            //div{
+            //  width: 100%!important;
+            //  margin-bottom: 1rem;
+            //}
+          }
+          .service-img{
+            //margin-right: 15%;
+            div{
+              width: 70%!important;
+              //margin-left: 0!important;
+            }
+          }
+
+        }
+      }
+    }
+  }
+  .locations-info{
+    padding: 1rem!important;
+    .locations-info-title{
+      font-size: 32px!important;
+    }
+    .location{
+      .location-wrapper{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        .location-desc{
+          padding-left: 0!important;
+          width: 100%!important;
+          .location-title{
+            margin-top: 1rem!important;
+          }
+          .location-long-desc{
+            width: 100%;
+          }
+        }
+        .location-image{
+          width: 100%;
+        }
+      }
+
+    }
+  }
+}
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) {  }
