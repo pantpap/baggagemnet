@@ -16,7 +16,8 @@
 .w-60{ width: 60%; }
 
 body{
-  font-family: Raleway;
+  //font-family: Raleway;
+  font-family: Roboto;
   font-style: normal;
   font-weight: $main-font-weight;
   font-size: $main-font-size;
@@ -74,7 +75,8 @@ footer{
     top: 1.5%;
     color: #FFFFFF;
     .text-title{
-      font-family: Muli;
+      //font-family: Muli;
+      font-family: Roboto;
       font-weight: 800;
       font-size: 42px;
       line-height: 53px;
@@ -148,7 +150,8 @@ footer{
         line-height: 75px;
       }
       .service-title{
-        font-family: Muli;
+        //font-family: Muli;
+        font-family: Roboto;
         font-weight: 800;
       }
       .service-desc{
